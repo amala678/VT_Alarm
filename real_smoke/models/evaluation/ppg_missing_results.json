@@ -1,0 +1,100 @@
+{
+  "ecg_11": {
+    "metrics": {
+      "n": 1,
+      "true": 1,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "tp": 1,
+      "sensitivity": 1.0,
+      "specificity": null,
+      "precision": 1.0,
+      "f1": 1.0,
+      "auroc": null,
+      "auprc": null
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg_11": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "auroc": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "auprc": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "precision": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        },
+        "specificity": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        },
+        "auroc": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        },
+        "auprc": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        },
+        "precision": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        },
+        "f1": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        }
+      }
+    }
+  }
+}

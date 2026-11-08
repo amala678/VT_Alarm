@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "vt-alarm-research"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "pandas>=2,<3", "scipy>=1.10,<2", "scikit-learn>=1.3,<2", "matplotlib>=3.7,<4", "torch>=2.2,<3", "wfdb>=4.1,<5", "joblib>=1.3,<2"]
+[project.scripts]
+vt-alarm = "vt_alarm.cli:main"
+[tool.setuptools.packages.find]
+include = ["vt_alarm*"]

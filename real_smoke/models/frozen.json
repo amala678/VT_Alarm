@@ -1,0 +1,172 @@
+{
+  "target": 0.95,
+  "seeds": [
+    11
+  ],
+  "cache_fingerprint": {
+    "paired.csv": "499c7580fcc4c3ae2b1a0b82bd643704c93786bf546067bdc9bfcaff99ccf839",
+    "paired.npz": "74b2970ad0e58f77506e1b14381b0d4b4ab0925e13f572b04455da6b676a111c",
+    "provenance.json": "225c671e69a9abef9882a6494adb5ee98d9d9d47cdbab20b8e80fb70bf7c0c50",
+    "ppg_missing.csv": "5b17fd3792529024e31b862b1a8e4b800e06402bb5b2f73cbebb95f861864e34",
+    "ppg_missing.npz": "4d1de13ddd0df28fd80ec7220c2b67a211996b76aed2945af0e48325d892b412"
+  },
+  "provenance": {
+    "synthetic": false,
+    "version": "1.1",
+    "seconds": 30,
+    "fs": 250,
+    "ecg_priority": [
+      "II",
+      "I",
+      "V",
+      "V1",
+      "III",
+      "AVF",
+      "AVL",
+      "AVR",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "n_eligible": 44,
+    "official_events": 5037,
+    "available_headers": 48,
+    "metadata_sha256": {
+      "event_labels.csv": "e64499ef7cb88deb8ce7988f8bc9110da3c30b8421d771e3fdede05335555d64",
+      "benchmark_data_split.csv": "f1ae7bbe1ec5d893e76e98c786829398011c65c87c8ebc200f649287ed0f7abc"
+    }
+  },
+  "python": "3.12.14",
+  "torch": "2.15.0+cu132",
+  "quality_cutoffs": {
+    "ecg_quality": 0.9048356748398333,
+    "ppg_quality": 0.919096850339401
+  },
+  "runs": {
+    "ecg_11": {
+      "mode": "ecg",
+      "seed": 11,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "threshold": 0.505760908126831,
+      "parameters": 23585,
+      "repeat_seconds": 0.017336033999981737,
+      "best_epoch": 3,
+      "validation": {
+        "n": 15,
+        "true": 8,
+        "tn": 1,
+        "fp": 6,
+        "fn": 0,
+        "tp": 8,
+        "sensitivity": 1.0,
+        "specificity": 0.14285714285714285,
+        "precision": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "auroc": 0.7321428571428571,
+        "auprc": 0.8235930735930737
+      }
+    },
+    "fusion_11": {
+      "mode": "fusion",
+      "seed": 11,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "threshold": 0.5293284058570862,
+      "parameters": 23729,
+      "repeat_seconds": 0.016615378000096825,
+      "best_epoch": 1,
+      "validation": {
+        "n": 15,
+        "true": 8,
+        "tn": 2,
+        "fp": 5,
+        "fn": 0,
+        "tp": 8,
+        "sensitivity": 1.0,
+        "specificity": 0.2857142857142857,
+        "precision": 0.6153846153846154,
+        "f1": 0.7619047619047619,
+        "auroc": 0.5892857142857143,
+        "auprc": 0.5832542457542457
+      }
+    },
+    "shuffled_11": {
+      "mode": "shuffled",
+      "seed": 11,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "threshold": 0.5324957370758057,
+      "parameters": 23729,
+      "repeat_seconds": 0.012969044000101349,
+      "best_epoch": 3,
+      "validation": {
+        "n": 15,
+        "true": 8,
+        "tn": 1,
+        "fp": 6,
+        "fn": 0,
+        "tp": 8,
+        "sensitivity": 1.0,
+        "specificity": 0.14285714285714285,
+        "precision": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "auroc": 0.6785714285714286,
+        "auprc": 0.7169642857142857
+      }
+    }
+  },
+  "search": {
+    "ecg": [
+      {
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "validation_auprc": 0.8235930735930737,
+        "seconds": 1.2142511729999796
+      }
+    ],
+    "fusion": [
+      {
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "validation_auprc": 0.5832542457542457,
+        "seconds": 0.08069656400004988
+      }
+    ],
+    "shuffled": [
+      {
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "validation_auprc": 0.7169642857142857,
+        "seconds": 0.10105515999998715
+      }
+    ]
+  },
+  "selection": "validation AUPRC; earliest epoch wins ties",
+  "baseline": {
+    "C": 0.1,
+    "threshold": 0.3745637518426351,
+    "trials": [
+      {
+        "C": 0.1,
+        "validation_auprc": 0.7412087912087912
+      },
+      {
+        "C": 1.0,
+        "validation_auprc": 0.6472537878787878
+      },
+      {
+        "C": 10.0,
+        "validation_auprc": 0.630239898989899
+      }
+    ]
+  },
+  "artifact_sha256": {
+    "baseline.joblib": "ffd0cde775ab54ab4a494d91f509d96bf3ac40abde27e559521c56303f477cfc",
+    "fusion_11.pt": "14cf9c569f32d0a68c180f5daaed3c18a1a7dce621bac75d83583fb58a49cd8b",
+    "ecg_11.pt": "61c07ecc37be680d30ec0bd6098c29c16cb60ce4cf295bd135b8295742b21e86",
+    "shuffled_11.pt": "c7f7b4856e2cbd2eea43372ad773ca4d93e10097b65e3546a6b7b8ec30b0fdc3"
+  }
+}

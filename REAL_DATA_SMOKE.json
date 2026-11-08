@@ -1,0 +1,155 @@
+[
+  {
+    "event": "003c13_0126",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.863914740246144,
+    "status": "usable"
+  },
+  {
+    "event": "003c13_0126",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.9582287042466514,
+    "status": "usable"
+  },
+  {
+    "event": "003c13_0115",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.8822928789006478,
+    "status": "usable"
+  },
+  {
+    "event": "003c13_0115",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.936502501331322,
+    "status": "usable"
+  },
+  {
+    "event": "0060de_1731",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.6748338585855564,
+    "status": "usable"
+  },
+  {
+    "event": "0060de_1731",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.991856290544967,
+    "status": "usable"
+  },
+  {
+    "event": "0060de_0560",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.7245499961877159,
+    "status": "usable"
+  },
+  {
+    "event": "0060de_0560",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.9554002668152263,
+    "status": "usable"
+  },
+  {
+    "event": "004f0c_3644",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.6841199851096714,
+    "status": "usable"
+  },
+  {
+    "event": "004f0c_3644",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.9708185883317915,
+    "status": "usable"
+  },
+  {
+    "event": "004f0c_2533",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.7755114213533625,
+    "status": "usable"
+  },
+  {
+    "event": "004f0c_2533",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.6964629519518493,
+    "status": "usable"
+  },
+  {
+    "event": "004f0c_3642",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.7242445028812527,
+    "status": "usable"
+  },
+  {
+    "event": "004f0c_3642",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.972135765553656,
+    "status": "usable"
+  },
+  {
+    "event": "004f0c_2475",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.7150148292220979,
+    "status": "usable"
+  },
+  {
+    "event": "004f0c_2475",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.9547466067581818,
+    "status": "usable"
+  },
+  {
+    "event": "004bad_1115",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.9767164784115461,
+    "status": "usable"
+  },
+  {
+    "event": "004bad_1115",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.9926915508509486,
+    "status": "usable"
+  },
+  {
+    "event": "004bad_0015",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.7972791123903871,
+    "status": "usable"
+  },
+  {
+    "event": "004bad_0015",
+    "channel": "PLETH",
+    "status": "excluded",
+    "reason": "constant signal"
+  },
+  {
+    "event": "012473_0351",
+    "channel": "II",
+    "n": 7500,
+    "quality": 0.9595630038043547,
+    "status": "usable"
+  },
+  {
+    "event": "012473_0351",
+    "channel": "PLETH",
+    "n": 7500,
+    "quality": 0.9315858428726868,
+    "status": "usable"
+  }
+]

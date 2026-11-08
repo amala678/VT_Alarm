@@ -1,0 +1,82 @@
+{
+  "repetitions": 100,
+  "seed": 2026,
+  "models": {
+    "baseline": {
+      "sensitivity": {
+        "low": 0.585,
+        "high": 1.0,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "specificity": {
+        "low": 0.7647058823529411,
+        "high": 1.0,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "auroc": {
+        "low": 0.8399782986111111,
+        "high": 1.0,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "auprc": {
+        "low": 0.643611111111111,
+        "high": 1.0,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "precision": {
+        "low": 0.5,
+        "high": 1.0,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "f1": {
+        "low": 0.5714285714285714,
+        "high": 0.9492327365728899,
+        "valid_replicates": 100,
+        "excluded": 0
+      }
+    }
+  },
+  "fusion_minus_ecg": {
+    "sensitivity": {
+      "low": null,
+      "high": null,
+      "valid_replicates": 0,
+      "excluded": 100
+    },
+    "specificity": {
+      "low": null,
+      "high": null,
+      "valid_replicates": 0,
+      "excluded": 100
+    },
+    "auroc": {
+      "low": null,
+      "high": null,
+      "valid_replicates": 0,
+      "excluded": 100
+    },
+    "auprc": {
+      "low": null,
+      "high": null,
+      "valid_replicates": 0,
+      "excluded": 100
+    },
+    "precision": {
+      "low": null,
+      "high": null,
+      "valid_replicates": 0,
+      "excluded": 100
+    },
+    "f1": {
+      "low": null,
+      "high": null,
+      "valid_replicates": 0,
+      "excluded": 100
+    }
+  }
+}

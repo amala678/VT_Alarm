@@ -1,0 +1,1808 @@
+{
+  "overall": {
+    "repetitions": 100,
+    "seed": 2026,
+    "models": {
+      "ecg": {
+        "sensitivity": {
+          "low": 0.585,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "specificity": {
+          "low": 0.52375,
+          "high": 0.9411764705882353,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": 0.8137473739495799,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auprc": {
+          "low": 0.6635343822843823,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "precision": {
+          "low": 0.30365384615384616,
+          "high": 0.8571428571428571,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.4135714285714286,
+          "high": 0.8571428571428571,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      },
+      "fusion": {
+        "sensitivity": {
+          "low": 1.0,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "specificity": {
+          "low": 0.8281862745098039,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": 0.9643461134453781,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auprc": {
+          "low": 0.9304662698412699,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "precision": {
+          "low": 0.5630952380952381,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.7204545454545455,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      },
+      "shuffled": {
+        "sensitivity": {
+          "low": 1.0,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "specificity": {
+          "low": 0.5723958333333333,
+          "high": 0.9459795321637426,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": 0.9645891690009337,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auprc": {
+          "low": 0.9166666666666665,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "precision": {
+          "low": 0.42986111111111114,
+          "high": 0.9034722222222219,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.6011312217194571,
+          "high": 0.9492327365728899,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    },
+    "fusion_minus_ecg": {
+      "sensitivity": {
+        "low": 0.0,
+        "high": 0.41499999999999976,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "specificity": {
+        "low": -0.05727124183006538,
+        "high": 0.43705882352941117,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "auroc": {
+        "low": -0.021218487394957963,
+        "high": 0.17869944852941166,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "auprc": {
+        "low": -0.03903769841269839,
+        "high": 0.3364656177156175,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "precision": {
+        "low": -0.08144841269841269,
+        "high": 0.6190909090909088,
+        "valid_replicates": 100,
+        "excluded": 0
+      },
+      "f1": {
+        "low": 0.0,
+        "high": 0.48893939393939356,
+        "valid_replicates": 100,
+        "excluded": 0
+      }
+    }
+  },
+  "ecg_low": {
+    "n": 12,
+    "true": 2,
+    "metrics": {
+      "ecg": {
+        "n": 12,
+        "true": 2,
+        "tn": 10,
+        "fp": 0,
+        "fn": 1,
+        "tp": 1,
+        "sensitivity": 0.5,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "f1": 0.6666666666666666,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "fusion": {
+        "n": 12,
+        "true": 2,
+        "tn": 9,
+        "fp": 1,
+        "fn": 0,
+        "tp": 2,
+        "sensitivity": 1.0,
+        "specificity": 0.9,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "shuffled": {
+        "n": 12,
+        "true": 2,
+        "tn": 7,
+        "fp": 3,
+        "fn": 0,
+        "tp": 2,
+        "sensitivity": 1.0,
+        "specificity": 0.7,
+        "precision": 0.4,
+        "f1": 0.5714285714285714,
+        "auroc": 1.0,
+        "auprc": 1.0
+      }
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg": {
+          "sensitivity": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "fusion": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "specificity": {
+            "low": 0.72375,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "shuffled": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "specificity": {
+            "low": 0.3809090909090909,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 89,
+            "excluded": 11
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": 0.0,
+          "high": 1.0,
+          "valid_replicates": 89,
+          "excluded": 11
+        },
+        "specificity": {
+          "low": -0.27625,
+          "high": 0.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 89,
+          "excluded": 11
+        },
+        "auprc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 89,
+          "excluded": 11
+        },
+        "precision": {
+          "low": -0.6666666666666667,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": -0.5,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    }
+  },
+  "ecg_high": {
+    "n": 12,
+    "true": 5,
+    "metrics": {
+      "ecg": {
+        "n": 12,
+        "true": 5,
+        "tn": 2,
+        "fp": 5,
+        "fn": 0,
+        "tp": 5,
+        "sensitivity": 1.0,
+        "specificity": 0.2857142857142857,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "fusion": {
+        "n": 12,
+        "true": 5,
+        "tn": 7,
+        "fp": 0,
+        "fn": 0,
+        "tp": 5,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "shuffled": {
+        "n": 12,
+        "true": 5,
+        "tn": 6,
+        "fp": 1,
+        "fn": 0,
+        "tp": 5,
+        "sensitivity": 1.0,
+        "specificity": 0.8571428571428571,
+        "precision": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "auroc": 1.0,
+        "auprc": 1.0
+      }
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 0.0,
+            "high": 0.6,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 0.9999999999999999,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "precision": {
+            "low": 0.201010101010101,
+            "high": 0.8393749999999994,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.3342657342657343,
+            "high": 0.9122222222222218,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "fusion": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "precision": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "shuffled": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 0.6666666666666666,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 0.9999999999999999,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auprc": {
+            "low": 0.9999999999999999,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "precision": {
+            "low": 0.5,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.6666666666666666,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "specificity": {
+          "low": 0.4,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": 0.0,
+          "high": 1.1102230246251565e-16,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auprc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "precision": {
+          "low": 0.160625,
+          "high": 0.7989898989898986,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.0877777777777778,
+          "high": 0.6657342657342652,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    }
+  },
+  "ppg_low": {
+    "n": 12,
+    "true": 1,
+    "metrics": {
+      "ecg": {
+        "n": 12,
+        "true": 1,
+        "tn": 7,
+        "fp": 4,
+        "fn": 0,
+        "tp": 1,
+        "sensitivity": 1.0,
+        "specificity": 0.6363636363636364,
+        "precision": 0.2,
+        "f1": 0.3333333333333333,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "fusion": {
+        "n": 12,
+        "true": 1,
+        "tn": 10,
+        "fp": 1,
+        "fn": 0,
+        "tp": 1,
+        "sensitivity": 1.0,
+        "specificity": 0.9090909090909091,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "shuffled": {
+        "n": 12,
+        "true": 1,
+        "tn": 8,
+        "fp": 3,
+        "fn": 0,
+        "tp": 1,
+        "sensitivity": 1.0,
+        "specificity": 0.7272727272727273,
+        "precision": 0.25,
+        "f1": 0.4,
+        "auroc": 1.0,
+        "auprc": 1.0
+      }
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "specificity": {
+            "low": 0.375,
+            "high": 0.8738095238095235,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 0.5864285714285712,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 0.7392045454545453,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "fusion": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "specificity": {
+            "low": 0.77375,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "shuffled": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "specificity": {
+            "low": 0.4079166666666667,
+            "high": 0.9332589285714286,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 65,
+            "excluded": 35
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 0.7762499999999996,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 0.8738095238095235,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 65,
+          "excluded": 35
+        },
+        "specificity": {
+          "low": 0.0,
+          "high": 0.625,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 65,
+          "excluded": 35
+        },
+        "auprc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 65,
+          "excluded": 35
+        },
+        "precision": {
+          "low": 0.0,
+          "high": 0.8571428571428572,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.0,
+          "high": 0.75,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    }
+  },
+  "ppg_high": {
+    "n": 12,
+    "true": 6,
+    "metrics": {
+      "ecg": {
+        "n": 12,
+        "true": 6,
+        "tn": 5,
+        "fp": 1,
+        "fn": 1,
+        "tp": 5,
+        "sensitivity": 0.8333333333333334,
+        "specificity": 0.8333333333333334,
+        "precision": 0.8333333333333334,
+        "f1": 0.8333333333333334,
+        "auroc": 0.9444444444444444,
+        "auprc": 0.9484126984126984
+      },
+      "fusion": {
+        "n": 12,
+        "true": 6,
+        "tn": 6,
+        "fp": 0,
+        "fn": 0,
+        "tp": 6,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "shuffled": {
+        "n": 12,
+        "true": 6,
+        "tn": 5,
+        "fp": 1,
+        "fn": 0,
+        "tp": 6,
+        "sensitivity": 1.0,
+        "specificity": 0.8333333333333334,
+        "precision": 0.8571428571428571,
+        "f1": 0.9230769230769231,
+        "auroc": 1.0,
+        "auprc": 1.0
+      }
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg": {
+          "sensitivity": {
+            "low": 0.5,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 0.4135714285714286,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 0.632125,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auprc": {
+            "low": 0.7763888888888889,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "precision": {
+            "low": 0.5263888888888889,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.5577922077922077,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "fusion": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 0.9999999999999999,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auprc": {
+            "low": 0.9999999999999999,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "precision": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "shuffled": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 0.4135714285714286,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auprc": {
+            "low": 0.9999999999999999,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "precision": {
+            "low": 0.5555555555555556,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.7142857142857143,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": 0.0,
+          "high": 0.5,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "specificity": {
+          "low": 0.0,
+          "high": 0.5864285714285712,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": 0.0,
+          "high": 0.36787499999999984,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auprc": {
+          "low": 0.0,
+          "high": 0.22361111111111062,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "precision": {
+          "low": 0.0,
+          "high": 0.47361111111111065,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.0,
+          "high": 0.44220779220779205,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    }
+  },
+  "ecg_low_ppg_low": {
+    "n": 6,
+    "true": 0,
+    "metrics": {
+      "ecg": {
+        "n": 6,
+        "true": 0,
+        "tn": 6,
+        "fp": 0,
+        "fn": 0,
+        "tp": 0,
+        "sensitivity": null,
+        "specificity": 1.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "fusion": {
+        "n": 6,
+        "true": 0,
+        "tn": 5,
+        "fp": 1,
+        "fn": 0,
+        "tp": 0,
+        "sensitivity": null,
+        "specificity": 0.8333333333333334,
+        "precision": 0.0,
+        "f1": 0.0,
+        "auroc": null,
+        "auprc": null
+      },
+      "shuffled": {
+        "n": 6,
+        "true": 0,
+        "tn": 4,
+        "fp": 2,
+        "fn": 0,
+        "tp": 0,
+        "sensitivity": null,
+        "specificity": 0.6666666666666666,
+        "precision": 0.0,
+        "f1": 0.0,
+        "auroc": null,
+        "auprc": null
+      }
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg": {
+          "sensitivity": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "auprc": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 0.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 0.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "fusion": {
+          "sensitivity": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "specificity": {
+            "low": 0.7142857142857143,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "auprc": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 0.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 0.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "shuffled": {
+          "sensitivity": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "specificity": {
+            "low": 0.2,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "auprc": {
+            "low": null,
+            "high": null,
+            "valid_replicates": 0,
+            "excluded": 100
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 0.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 0.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        },
+        "specificity": {
+          "low": -0.2857142857142857,
+          "high": 0.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        },
+        "auprc": {
+          "low": null,
+          "high": null,
+          "valid_replicates": 0,
+          "excluded": 100
+        },
+        "precision": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    }
+  },
+  "ecg_low_ppg_high": {
+    "n": 6,
+    "true": 2,
+    "metrics": {
+      "ecg": {
+        "n": 6,
+        "true": 2,
+        "tn": 4,
+        "fp": 0,
+        "fn": 1,
+        "tp": 1,
+        "sensitivity": 0.5,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "f1": 0.6666666666666666,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "fusion": {
+        "n": 6,
+        "true": 2,
+        "tn": 4,
+        "fp": 0,
+        "fn": 0,
+        "tp": 2,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "shuffled": {
+        "n": 6,
+        "true": 2,
+        "tn": 3,
+        "fp": 1,
+        "fn": 0,
+        "tp": 2,
+        "sensitivity": 1.0,
+        "specificity": 0.75,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "auroc": 1.0,
+        "auprc": 1.0
+      }
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg": {
+          "sensitivity": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 87,
+            "excluded": 13
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 99,
+            "excluded": 1
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "fusion": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 87,
+            "excluded": 13
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 99,
+            "excluded": 1
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "shuffled": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 87,
+            "excluded": 13
+          },
+          "specificity": {
+            "low": 0.11250000000000004,
+            "high": 1.0,
+            "valid_replicates": 99,
+            "excluded": 1
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": 0.0,
+          "high": 1.0,
+          "valid_replicates": 87,
+          "excluded": 13
+        },
+        "specificity": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 99,
+          "excluded": 1
+        },
+        "auroc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 86,
+          "excluded": 14
+        },
+        "auprc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 86,
+          "excluded": 14
+        },
+        "precision": {
+          "low": 0.0,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.0,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    }
+  },
+  "ecg_high_ppg_low": {
+    "n": 6,
+    "true": 1,
+    "metrics": {
+      "ecg": {
+        "n": 6,
+        "true": 1,
+        "tn": 1,
+        "fp": 4,
+        "fn": 0,
+        "tp": 1,
+        "sensitivity": 1.0,
+        "specificity": 0.2,
+        "precision": 0.2,
+        "f1": 0.3333333333333333,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "fusion": {
+        "n": 6,
+        "true": 1,
+        "tn": 5,
+        "fp": 0,
+        "fn": 0,
+        "tp": 1,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "shuffled": {
+        "n": 6,
+        "true": 1,
+        "tn": 4,
+        "fp": 1,
+        "fn": 0,
+        "tp": 1,
+        "sensitivity": 1.0,
+        "specificity": 0.8,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "auroc": 1.0,
+        "auprc": 1.0
+      }
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "specificity": {
+            "low": 0.0,
+            "high": 0.375,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 0.4,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 0.5714285714285714,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "fusion": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "shuffled": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "specificity": {
+            "low": 0.22375,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 67,
+            "excluded": 33
+          },
+          "precision": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 67,
+          "excluded": 33
+        },
+        "specificity": {
+          "low": 0.625,
+          "high": 1.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "auroc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 67,
+          "excluded": 33
+        },
+        "auprc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 67,
+          "excluded": 33
+        },
+        "precision": {
+          "low": 0.0,
+          "high": 0.8,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.0,
+          "high": 0.6666666666666667,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    }
+  },
+  "ecg_high_ppg_high": {
+    "n": 6,
+    "true": 4,
+    "metrics": {
+      "ecg": {
+        "n": 6,
+        "true": 4,
+        "tn": 1,
+        "fp": 1,
+        "fn": 0,
+        "tp": 4,
+        "sensitivity": 1.0,
+        "specificity": 0.5,
+        "precision": 0.8,
+        "f1": 0.8888888888888888,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "fusion": {
+        "n": 6,
+        "true": 4,
+        "tn": 2,
+        "fp": 0,
+        "fn": 0,
+        "tp": 4,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0
+      },
+      "shuffled": {
+        "n": 6,
+        "true": 4,
+        "tn": 2,
+        "fp": 0,
+        "fn": 0,
+        "tp": 4,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0
+      }
+    },
+    "bootstrap": {
+      "repetitions": 100,
+      "seed": 2026,
+      "models": {
+        "ecg": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 0.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "precision": {
+            "low": 0.6,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 0.75,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "fusion": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "precision": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        },
+        "shuffled": {
+          "sensitivity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "specificity": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auroc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "auprc": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 86,
+            "excluded": 14
+          },
+          "precision": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          },
+          "f1": {
+            "low": 1.0,
+            "high": 1.0,
+            "valid_replicates": 100,
+            "excluded": 0
+          }
+        }
+      },
+      "fusion_minus_ecg": {
+        "sensitivity": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "specificity": {
+          "low": 0.0,
+          "high": 1.0,
+          "valid_replicates": 86,
+          "excluded": 14
+        },
+        "auroc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 86,
+          "excluded": 14
+        },
+        "auprc": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_replicates": 86,
+          "excluded": 14
+        },
+        "precision": {
+          "low": 0.0,
+          "high": 0.4,
+          "valid_replicates": 100,
+          "excluded": 0
+        },
+        "f1": {
+          "low": 0.0,
+          "high": 0.25,
+          "valid_replicates": 100,
+          "excluded": 0
+        }
+      }
+    }
+  }
+}
